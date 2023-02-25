@@ -8,7 +8,7 @@ public class WebOrderTask2 {
     public static void main(String[] args) throws InterruptedException {
 
         // tell your project where the webdriver is located.
-        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
 
         // create an instance of WebDriver
         WebDriver driver=new ChromeDriver();
