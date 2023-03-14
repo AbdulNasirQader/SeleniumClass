@@ -36,8 +36,20 @@ public class WindowHandle {
 
         // print all the window handles
         for (String wh:windowHandles){
-            System.out.println();
+
+         // switch the focus of the driver to help window
+         driver.switchTo().window(wh);
+
+         // check the title of the window to which our focus is right now
+            String title = driver.getTitle();
+            if (title.equalsIgnoreCase("Google Account Help")){
+                break;
+            }
         }
+        // to verify we switched to the right window;
+        System.out.println(driver.getTitle());
+
+        driver.switchTo().window(parentWindowHandel);
 
 
     }
