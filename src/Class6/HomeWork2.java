@@ -14,7 +14,7 @@ public class HomeWork2 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
-        
+
         //  2)
         driver.navigate().to("https://the-internet.herokuapp.com/iframe");
         driver.switchTo().frame("mce_0_ifr");
